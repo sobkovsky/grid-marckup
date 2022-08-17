@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;500&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <nav class="nav-bar">
+      <div class="nav-item-1"> <img src="https://www.freeiconspng.com/thumbs/letter-m-icon-png/letter-m-icon-png-16.png" alt=""><span>Minimalista</span></div>
+      <button aria-expanded="false" aria-controls="menu-list">
+        <span class="open">&#x2630;</span>
+        <span class="close">&times;</span>
+      </button>
+      <ul id="menu-list">
+        <li class="nav-item-2">Home</li>
+        <li class="nav-item-3">About Us</li>
+        <li class="nav-item-4">Contact</li>
+      </ul> 
+    </nav>
+    <div class="header">
+      <h1>About US</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pharetra enim eu convallis varius. Curabitur viverra, tellus a mattis euismod, lacus ipsum tempus eros, vitae rhoncus nisi erat eu est. Nunc sed justo erat. Fusce tempus purus tortor, nec varius.</p>
+    </div>
+    <section class="hotel-rooms">
+      <div class="hotel-room">
+        <img src="img/room1.png" alt="hotel-room">
+        <h3>Soluta esse molestie</h3>
+        <p>Consectetur adipiscing elit. Nam pharetra enim eu convallis varius. Lorem ipsum dolor sit amet. Curabitur viverra, tellus a mattis euismod, lacus ipsum tempus eros, vitae rhoncus nisi erat eu est. Nunc sed justo erat. Fusce tempus purus tortor, nec varius.</p>
+      </div>
+      <div class="hotel-room">
+        <img src="img/room2.png" alt="hotel-room">
+        <h3>Dolore feugiat nulla</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pharetra enim eu convallis varius. Curabitur viverra, tellus a mattis euismod, lacus ipsum tempus eros, vitae rhoncus nisi erat eu est. Nunc sed justo erat. Fusce tempus purus tortor nec.</p>
+      </div>
+      <div class="hotel-room">
+        <img src="img/room3.png" alt="hotel-room">
+        <h3>Consequat vel illum</h3>
+        <p>Nunc sed justo erat. Fusce tempus purus tortor, nec varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pharetra enim eu convallis varius. Curabitur viverra, tellus a mattis euismod, lacus ipsum tempus eros, vitae rhoncus nisi erat eu est.</p>
+      </div>
+    </section>
+    <div class="team-description">
+      <h1>- Our Team -</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pharetra enim eu convallis varius. Curabitur viverra, tellus a mattis euismod, lacus ipsum.</p>
+    </div>
+    <section class="team-members">
+      <div class="member">
+        <img src="img/team1.png" alt="melisa">
+        <h3>Melisa Style <br> Graphic Designer</h3>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-google-plus"></i>
+      </div>
+      <div class="member">
+        <img src="img/team2.png" alt="melisa">
+        <h3>Frank Star <br> Boss</h3>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-google-plus"></i>
+        
+      </div>
+      <div class="member">
+        <img src="img/team3.png" alt="melisa">
+        <h3>Jane Naismith <br> Graphic Designer</h3>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-google-plus"></i>
+      </div>
+      <div class="member">
+        <img src="img/team4.png" alt="melisa">
+        <h3>Mark Stoner <br> Web Developer</h3>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-google-plus"></i>
+      </div>
+    </section>
+    <footer>
+      <div class="social-icons">
+        <div><i class="fa-brands fa-facebook"></i><span class="social-name">FACEBOOK</span></div>
+        <div><i class="fa-brands fa-twitter"></i><span class="social-name">TWITTER</span></div>
+        <div><i class="fa-brands fa-instagram"></i><span class="social-name">INSTAGRAM</span></div>
+        <div><i class="fa-brands fa-linkedin"></i><span class="social-name">LINKEDIN</span></div>
+      </div>
+      <div class="contacts">
+        <div class="contact">
+          <div>Company Adress</div>
+          <div>Responsive Street 7 <br>London - United Kingdom <br>Europe</div>
+        </div>
+        <div class="contact">
+          <div>E-mail</div>
+          <div>contact@domain.com <br> office@domain.com</div>
+        </div>
+        <div class="contact">
+          <div>Phone Numbers</div>
+          <div>0800 7332 3422 23 <br>0800 7332 3422 23 <br> 0800 7332 3422 23</div>
+        </div>
+      </div>
+      <div class="footer">Copyright 2045 - Your Domain Name<br> Design and codeing by Response Team</div>
+    </footer>
+  </div>
+
+  <script> 
+    const navButton = document.querySelector ('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+    const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+    navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+    </script>
+
+</body>
+</html>
