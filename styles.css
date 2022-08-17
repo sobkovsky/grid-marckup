@@ -11,8 +11,6 @@ body{
 }
 
 .container {
-  max-width: 1200px;
-  min-width: 662px;
   margin: auto;
   background-color: white;
   
@@ -32,6 +30,24 @@ ul {
   justify-content: flex-end;
   grid-gap: 15px;
   padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover{
+	color: rgb(243, 255, 9);
+  cursor: pointer;
+}
+
+a:visited{
+	color: rgb(0, 0, 0);
+}
+
+a:active{
+	color: rgb(30, 255, 0);
 }
 
 .nav-bar {
@@ -185,8 +201,8 @@ ul {
   margin: auto;
   padding: 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  justify-content: center;
   max-width: 100%;
   text-align: center;
 }
@@ -198,7 +214,6 @@ ul {
 footer {
   background-color: #282828;
   color: #777;
-  max-width: 1150;
   margin: auto;
   margin-top: 80px;
 }
@@ -319,6 +334,53 @@ footer {
     }
   }
 
+
+/* STICKY NAV */
+.sticky-nav {
+  background-image: url(./img/nav-background.jpg);
+  opacity: .8;
+  height: 5.375rem;
+  position: fixed;
+  bottom: 0;
+  left: 20%;
+  right: 20%;
+  padding: 10px;
+  z-index: 500;
+  padding-left: 240px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.nav-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.nav-header, .nav-button {
+  margin-left: auto;
+}
+
+.nav-button {
+  padding-left: 20px;
+}
+
+.nav-header {
+  color: white;
+}
+
+button {
+  padding: 15px 17px;
+  font-size: 13px;
+  font-weight: bold;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: rgb(3, 3, 119);
+
   @media (max-width: 599px) 
   {
     .container {
@@ -358,3 +420,10 @@ footer {
     }
   }
 
+  @media (min-with: 100px) {
+    .container,
+    .header,
+    .footer {
+      max-width: 140px;
+    }
+  }
